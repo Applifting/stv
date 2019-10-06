@@ -2,6 +2,8 @@
 
 *TypeScript implementation of STV algorithm without any runtime dependencies.*
 
+![](https://media.giphy.com/media/Q93l2yEDrVsGhoRauM/giphy.gif)
+
 ## Getting started
 
 Add the library into your project using either:
@@ -26,7 +28,6 @@ import { stv } from 'stv';
 
 To evaluate election using STV, invoke the algorithm by calling the `stv(opts)` function:
 
-![](https://media.giphy.com/media/Q93l2yEDrVsGhoRauM/giphy.gif)
 
 ```typescript
 const results = stv({
