@@ -9,6 +9,8 @@
     "email": "vrata.kalenda@applifting.io",
     "url": "https://applifting.io"
   },
+  "homepage": "https://github.com/Applifting/stv",
+  "keywords": ["election", "stv", "voting"],
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.8",
