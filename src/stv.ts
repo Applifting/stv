@@ -171,9 +171,9 @@ export function validateSTVOpts(options: STVOptions) {
 }
 
 /**
+ * Counts election ballots using Single Transferable Vote (STV) method. 
  * 
- * 
- * This works effectively according to Scottish STV Rules. See more at: https://www.opavote.com/methods/scottish-stv-rules
+ * This implementation abides by the Scottish STV Rules. See more at: https://www.opavote.com/methods/scottish-stv-rules
  * @param opts 
  * 
  */
