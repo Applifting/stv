@@ -26,6 +26,8 @@ import { stv } from 'stv';
 
 To evaluate election using STV, invoke the algorithm by calling the `stv(opts)` function:
 
+![](http://www.giphy.com/gifs/Q93l2yEDrVsGhoRauM)
+
 ```typescript
 const results = stv({
   seatsToFill: 2,
