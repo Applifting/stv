@@ -48,3 +48,10 @@ const results = stv({
 });
 ```
 
+## Which STV counting method is implemented?
+
+Currently, the [Scottish STV rules](https://www.opavote.com/methods/scottish-stv-rules) are implemented. There may be more variants in the future.
+
+## License 📜
+
+The `stv` library is licensed under MIT license.
