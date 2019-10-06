@@ -4,6 +4,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
+  "author": {
+    "name": "Vratislav Kalenda",
+    "email": "vrata.kalenda@applifting.io",
+    "url": "https://applifting.io"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.8",
