@@ -1,0 +1,19 @@
+{
+  "name": "stv",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "start": "ts-node ./src/elections.ts",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll --coverage"
+  }
+}

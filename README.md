@@ -1,0 +1,1 @@
+Put file `elections.csv` with raw votes without a header into the root folder and type `yarn start`.
