@@ -124,13 +124,13 @@ export function stvRound(roundNumber: number, lastRound: STVRound | undefined, o
   const winQuota = opts.winQuota;
   const lastWinners = lastRound && lastRound.winners || [];
   const lastEliminations = lastRound && lastRound.eliminated || [];
-  log(`👉 ${roundNumber}. Round, Count`)
+  log(`👉 ${roundNumber}. Round.`)
   const tally = countVotesForCandidate(opts.candidates, opts.votes, undefined, [...lastEliminations, ...lastWinners]);
   const frontrunner = max(tally);
   let winner: string | undefined;
   let eliminated: string | undefined;
   let surplusVotes: number | undefined;
-  log(`∑ Tally round (${roundNumber}): ${inspect(tally)}`);
+  log(`∑ Votes tally of round (${roundNumber}): ${inspect(tally)}`);
   if (frontrunner.votesCount >= winQuota) {
     winner = frontrunner.candidate;
     surplusVotes = frontrunner.votesCount - winQuota;
@@ -185,6 +185,7 @@ export function stv(opts: STVOptions): STVResults {
   log(`🗳 Number of valid votes count: ${weightedVoteCount}  (weighted)`);
   const winQuota = getWinQuota(weightedVoteCount, opts.seatsToFill, false);
   log(`🧗‍ Win quota to be elected: ${winQuota}  (weighted)`);
+  log(``);
 
   let lastRound: STVRound | undefined = undefined;
   for (let roundNumber = 1; roundNumber < 20; roundNumber++) {
@@ -193,7 +194,7 @@ export function stv(opts: STVOptions): STVResults {
     log(``);
     if (lastRound.winners.length >= opts.seatsToFill) {
       log('🏛 STV Computation Completed. 🏛')
-      log(`🎉 Winners: ${lastRound.winners} 🎉`);
+      log(`🎉 Winners: ${lastRound.winners.join(', ')} 🎉`);
       log(``)
       break;
     }
