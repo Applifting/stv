@@ -1,0 +1,147 @@
+{
+  "n_seats": 2,
+  "n_votes": 6918,
+  "title": "Executive Committee",
+  "precision": 5,
+  "withdrawn": [],
+  "method": "Scottish STV",
+  "version": "1.0",
+  "candidates": [
+    "Steve Jobs",
+    "Elon Musk",
+    "Bill Gates",
+    "Warren Buffet",
+    "Richard Branson"
+  ],
+  "winners": [
+    0,
+    2
+  ],
+  "tie_breaks": [],
+  "options": [],
+  "rounds": [
+    {
+      "count": [
+        141800000,
+        118400000,
+        128300000,
+        99000000,
+        104500000
+      ],
+      "surplus": 0,
+      "exhausted": 0,
+      "continuing": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "n": 1,
+      "msg": "Count of first choices. No candidates have surplus votes so candidates will be eliminated and their votes transferred for the next round. ",
+      "winners": [],
+      "losers": [],
+      "action": {
+        "type": "first",
+        "desc": "Count of first choices. "
+      },
+      "thresh": 197400000
+    },
+    {
+      "count": [
+        162700000,
+        135900000,
+        160900000,
+        0,
+        124600000
+      ],
+      "surplus": 0,
+      "exhausted": 7900000,
+      "continuing": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "n": 2,
+      "msg": "Count after eliminating Warren Buffet and transferring votes. No candidates have surplus votes so candidates will be eliminated and their votes transferred for the next round. ",
+      "winners": [],
+      "losers": [
+        3
+      ],
+      "action": {
+        "type": "eliminate",
+        "candidates": [
+          3
+        ],
+        "desc": ""
+      },
+      "thresh": 197400000
+    },
+    {
+      "count": [
+        209000000,
+        166500000,
+        194200000,
+        0,
+        0
+      ],
+      "surplus": 11600000,
+      "exhausted": 22300000,
+      "continuing": [
+        1,
+        2
+      ],
+      "n": 3,
+      "msg": "Count after eliminating Richard Branson and transferring votes. Candidate Steve Jobs has reached the threshold and is elected. Candidates have surplus votes so surplus votes will be transferred for the next round. ",
+      "winners": [
+        0
+      ],
+      "losers": [
+        3,
+        4
+      ],
+      "action": {
+        "type": "eliminate",
+        "candidates": [
+          4
+        ],
+        "desc": ""
+      },
+      "thresh": 197400000
+    },
+    {
+      "count": [
+        197400000,
+        170829000,
+        199178350,
+        0,
+        0
+      ],
+      "surplus": 1778350,
+      "exhausted": 24592650,
+      "continuing": [
+        1
+      ],
+      "n": 4,
+      "msg": "Count after transferring surplus votes from Steve Jobs with a transfer value of 116.00000/2090.00000. Candidate Bill Gates has reached the threshold and is elected. ",
+      "winners": [
+        0,
+        2
+      ],
+      "losers": [
+        3,
+        4
+      ],
+      "action": {
+        "type": "surplus",
+        "candidates": [
+          0
+        ],
+        "desc": ""
+      },
+      "thresh": 197400000
+    }
+  ],
+  "n_valid_votes": 5920
+}

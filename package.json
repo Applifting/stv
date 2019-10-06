@@ -1,0 +1,28 @@
+{
+  "name": "stv",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Vratislav Kalenda",
+    "email": "vrata.kalenda@applifting.io",
+    "url": "https://applifting.io"
+  },
+  "homepage": "https://github.com/Applifting/stv",
+  "keywords": ["election", "stv", "voting"],
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "start": "ts-node ./src/elections.ts",
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll --coverage",
+    "prepublish": "rm -rf ./dist/* && tsc"
+  }
+}
